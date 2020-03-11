@@ -4,6 +4,7 @@
   <% @restaurants.each do |restaurant| %>
     <li>
       <%= link_to restaurant.name, restaurant_path(restaurant) %>
+      (<%= restaurant.category.capitalize %>)
     </li>
   <% end %>
 </ul>
